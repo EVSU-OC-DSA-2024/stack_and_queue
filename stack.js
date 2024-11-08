@@ -23,7 +23,7 @@ class Stack {
 
         const temp_stack = new Stack(this.array)
 
-        while(temp_stack.array.length > 0) {
+        while(!temp_stack.isEmpty()) {
             const temp_last_index_number = temp_stack.array.length - 1
             
             if (temp_last_index_number == n) {
@@ -39,7 +39,7 @@ class Stack {
     search(value) {
         const temp_stack = new Stack(this.array)
 
-        while(temp_stack.array.length > 0) {
+        while(!temp_stack.isEmpty()) {
             if (temp_stack.peek() == value) {
                 return true
             }
